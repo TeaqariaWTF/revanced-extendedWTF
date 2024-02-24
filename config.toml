@@ -15,16 +15,16 @@ arch = "arm64-v8a"
 apkmirror-arch = "arm64-v8a"
 
 [Music]
+enabled = false
 build-mode = "both"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 apkmirror-arch = "arm64-v8a"
 included-patches = "'Permanent shuffle' 'Permanent repeat'"
 excluded-patches = "'Custom branding name YouTube Music'"
-# enabled = false
 
 [Twitter]
+enabled = false
 apkmirror-dlurl = "https://apkmirror.com/apk/twitter-inc/twitter/"
 arch = "arm64-v8a"
 version = "auto"
-# enabled = false
