@@ -112,7 +112,6 @@ for s in "uninstall.sh" "service.sh"; do
 	sed -i "2 i\NVBASE=${NVBASE}" $MODPATH/$s
 done
 
-ui_print "* Done"
 ui_print " "
 
 sleep 0.5
