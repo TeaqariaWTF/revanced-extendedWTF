@@ -5,7 +5,7 @@ enable-magisk-update = true
 
 # you can use rvmm-config-gen to generate a config
 
-[YouTube Latest]
+[YouTube]
 app-name = "YouTube"
 build-mode = "both"
 included-patches = "'Add splash animation' 'MaterialYou' 'Remove player controls background' 'Enable slide to seek'"
