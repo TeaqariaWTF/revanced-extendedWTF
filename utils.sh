@@ -318,7 +318,7 @@ build_rv() {
 	p_patcher_args+=("$(join_args "${args[excluded_patches]}" -e) $(join_args "${args[included_patches]}" -i)")
 	[ "${args[exclusive_patches]}" = true ] && p_patcher_args+=("--exclusive")
 
-	for dl_p in archive apkmirror uptodown apkmonk; do
+	for dl_p in apkmirror; do
 		if [ -z "${args[${dl_p}_dlurl]}" ]; then continue; fi
 		if ! get_"${dl_p}"_resp "${args[${dl_p}_dlurl]}" || ! pkg_name=$(get_"${dl_p}"_pkg_name); then
 			args[${dl_p}_dlurl]=""
@@ -359,7 +359,7 @@ build_rv() {
 	version_f=${version_f#v}
 	local stock_apk="${TEMP_DIR}/${pkg_name}-${version_f}-${arch_f}.apk"
 	if [ ! -f "$stock_apk" ]; then
-		for dl_p in archive apkmirror uptodown apkmonk; do
+		for dl_p in apkmirror; do
 			if [ -z "${args[${dl_p}_dlurl]}" ]; then continue; fi
 			pr "Downloading '${table}' from ${dl_p}"
 			if [ "$get_latest_ver" = true ] && [ $dl_p = uptodown ]; then local vver=""; else local vver=$version; fi
