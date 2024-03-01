@@ -38,7 +38,7 @@ jobs:
       - name: Get Date
         id: date
         run: |
-          echo "DATE=$(date +%Y%m%d)"
+          echo "DATE=$(date +%Y%m%d)" >> "$GITHUB_OUTPUT"
 
       - name: Get next version code
         id: next_ver_code
@@ -54,7 +54,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
-          NEXT_VER_CODE: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
+          NEXT_VER_CODE: ${{ steps.date.outputs.DATE }}
 
       - name: Get output
         id: get_output
