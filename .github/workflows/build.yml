@@ -12,12 +12,12 @@ on:
 jobs:
   run:
     permissions: write-all
-    runs-on: windows-2022
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-java@v4.1.0
         with:
-          distribution: "temurin"
-          java-version: "23-ea"
+          distribution: "zulu"
+          java-version: "17"
 
       - name: Checkout
         uses: actions/checkout@v4.1.1
@@ -34,11 +34,6 @@ jobs:
               echo "$UPDATE_CFG" > config.toml
             fi
           fi
-
-      - name: Get Date
-        id: date
-        run: |
-          echo "DATE=$(date +%Y%m%d)" >> "$GITHUB_OUTPUT"
 
       - name: Get next version code
         id: next_ver_code
@@ -65,8 +60,13 @@ jobs:
           echo "${DELIM}" >> "$GITHUB_OUTPUT"
           cp -f build.md build.tmp
 
+      - name: Get Date
+        id: date
+        run: |
+          echo "DATE=$(date +%Y%m%d)" >> "$GITHUB_OUTPUT"
+
       - name: Upload modules to release
-        uses: svenstaro/upload-release-action@2.9.0
+        uses: svenstaro/upload-release-action@v2.9.0
         with:
           body: ${{ steps.get_output.outputs.BUILD_LOG }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
