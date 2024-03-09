@@ -20,7 +20,7 @@ This build is different from [ReVanced](https://github.com/abakNacchan/revanced-
      <li>Get updates from the Magisk app</li>
      <li>Avoid breaking SafetyNet or triggering root detections</li>
      <li>Manage the installation of the appropriate version of the stock app and other related tasks</li>
-     <li>support Magisk and KernelSU</li>
+     <li>Supports Magisk and KernelSU</li>
     </ul>
 </ul>
 Be aware that GitHub Actions will trigger the <a href="../../actions/workflows/ci.yml">CI workflow</a> to build the modules and APKs daily if there is a change in ReVanced eXtended patches. You might want to turn it off.
