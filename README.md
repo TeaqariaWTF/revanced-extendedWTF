@@ -1,6 +1,6 @@
 # ReVanced eXtended
 
-This build is different from [ReVanced](https://github.com/abakNacchan/revanced-magisk-module/releases) because it always uses the newest version possible while keeping the compatibility and the main features like SponsorBlock. Sometimes the newest version is not compatible with the sources, so the build will stay in the last compatible version. That means the build can be faster or slower depending on the sources.
+This build is different from [ReVanced](https://github.com/abakNacchan/revanced-magisk-module/releases) because it always uses the newest version possible while keeping the compatibility and the main features like SponsorBlock. Sometimes the newest version is not compatible with the sources, so the build will stay in the last compatible version. That means the build might be released faster or slower depending on the sources.
 
 [![CI](https://github.com/AbakNacchan/revanced-extended/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/AbakNacchan/revanced-extended/actions/workflows/ci.yml)
 
