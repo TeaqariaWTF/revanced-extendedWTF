@@ -8,8 +8,6 @@ This build is different from [ReVanced](https://github.com/abakNacchan/revanced-
 
 ※ Get the [latest CI release](https://github.com/AbakNacchan/revanced-extended/releases) ※
 
-Use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach) to detach YouTube and YouTube Music from Play Store if you are using Magisk modules. 
-
 <details><summary><big>Features</big></summary>
 <ul>
  <li>Supports all existing and upcoming ReVanced eXtended apps</li>
