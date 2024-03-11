@@ -23,8 +23,8 @@ included-patches = "'Add splash animation' 'MaterialYou' 'Remove player controls
 excluded-patches = "'Custom branding name YouTube' 'Announcements' 'Enable debugging' 'Change player flyout panel toggles' 'HDR Auto Brightness'"
 version = "19.10.37"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+apkmirror-arch = "all"
 arch = "arm64-v8a"
-# apkmirror-arch = "arm64-v8a"
 
 [Music]
 enabled = false
