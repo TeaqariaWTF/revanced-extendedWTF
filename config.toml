@@ -6,7 +6,7 @@ enable-magisk-update = true
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
-# enabled = false
+enabled = false
 app-name = "YouTube"
 build-mode = "both"
 included-patches = "'Add splash animation' 'MaterialYou' 'Remove player controls background' 'Enable slide to seek'"
@@ -20,14 +20,14 @@ apkmirror-arch = "arm64-v8a"
 app-name = "YouTube"
 build-mode = "both"
 included-patches = "'Add splash animation' 'MaterialYou' 'Remove player controls background' 'Enable slide to seek'"
-excluded-patches = "'Custom branding name YouTube' 'Announcements' 'Enable debugging' 'Change player flyout panel toggles'"
-version = "19.08.36"
+excluded-patches = "'Custom branding name YouTube' 'Announcements' 'Enable debugging' 'Change player flyout panel toggles' 'HDR Auto Brightness'"
+version = "beta"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 arch = "arm64-v8a"
 apkmirror-arch = "arm64-v8a"
 
 [Music]
-# enabled = false
+enabled = false
 build-mode = "both"
 version = "6.42.52"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
