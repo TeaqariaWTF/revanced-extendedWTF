@@ -24,7 +24,7 @@ excluded-patches = "'Custom branding name YouTube' 'Announcements' 'Enable debug
 version = "19.10.37"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 arch = "arm64-v8a"
-apkmirror-arch = "arm64-v8a"
+# apkmirror-arch = "arm64-v8a"
 
 [Music]
 enabled = false
