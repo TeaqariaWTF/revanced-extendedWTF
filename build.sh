@@ -168,7 +168,7 @@ fi
 log "\nChangelog:"
 log "$(cat $TEMP_DIR/*-rv/changelog.md)"
 log ""
-log "[Buy me](https://patreon.com/OMEWorkshopandStudio) a cup of ☕"
+log "[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W8VRK0S)"
 
 SKIPPED=$(cat $TEMP_DIR/skipped 2>/dev/null || :)
 if [ -n "$SKIPPED" ]; then
